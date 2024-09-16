@@ -2,6 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+}
 
+@import url("https://use.typekit.net/prt2ztm.css");
+
+/*
+
+Poppins Regular
+
+font-family: "poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Poppins Light
+
+font-family: "poppins", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Poppins Bold
+
+font-family: "poppins", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Poppins Semibold
+
+font-family: "poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+
+*/
+
+:root {
+  /*farver*/
+  --white: white;
+  --black: black;
+  --black: #00000061; /* opacity 38% */
+
+  --sand: #c9a788;
+  --sand-58: #c9a78894; /* opacity 58% */
+  --sand-lys: #d9b594;
+
+  --grøn-100: #5e8b4b;
+  --grøn-100-o58: #5e8b4b94; /* opacity 58% */
+  --grøn-100-o33: #5e8b4b54; /* opacity 33% */
+  --grøn-lys: #7ab861;
+  --grøn-200: #65a04c;
+  --grøn-300: #739466;
+  --grøn-350: #6c925c;
+  --grøn-500: #4d6f3d;
+  --grøn-700: #445a3a;
+
+  /*font-styles*/
+
+  --primary-font: "poppins";
+  --bold: "poppins", Bold;
+  --semi-bold: "poppins", Semibold;
+  --light: "poppins", light;
+
+  /*font størrelser - mobil*/
+
+  --h1-sizeM: 28px;
+  --h2-sizeM: 22px;
+  --h3-sizeM: 16px;
+  --body-sizeM: 14px;
+
+  /*font størrelser - desktop*/
+
+  --h1-sizeD: 156px;
+  --h2-sizeD: 44px;
+  --h3-sizeD: 34px;
+  --h4-sizeD: 28px;
+
+  --body-bold-sizeD: 20px;
+  --body-light-sizeD: 20px;
+  --body-mini-sizeD: 12px;
+}
+
+body {
+  background-image: url(img/bgimg.gif);
 }
