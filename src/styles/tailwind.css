@@ -1,8 +1,120 @@
 @tailwind base;
 @tailwind components;
-.primary-btn {
+
+/* farver */
+.black-o38 {
+  @apply bg-[var(--black-o38)];
+}
+
+.sand-100 {
+  @apply bg-[var(--sand-100)];
+}
+
+.sand-o58 {
+  @apply bg-[var(--sand-o58)];
+}
+
+.sand-lys {
+  @apply bg-[var(--sand-lys)];
+}
+
+.grøn-100 {
   @apply bg-[var(--grøn-100)];
 }
+
+.grøn-100-o58 {
+  @apply bg-[var(--grøn-100-o58)];
+}
+.grøn-100-o33 {
+  @apply bg-[var(--grøn-100-o33)];
+}
+
+.grøn-lys {
+  @apply bg-[var(--grøn-lys)];
+}
+
+.grøn-200 {
+  @apply bg-[var(--grøn-200)];
+}
+
+.grøn-300 {
+  @apply bg-[var(--grøn-300)];
+}
+
+.grøn-350 {
+  @apply bg-[var(--grøn-350)];
+}
+.grøn-500 {
+  @apply bg-[var(--grøn-500)];
+}
+
+.grøn-700 {
+  @apply bg-[var(--grøn-700)];
+}
+
+/*font styles*/
+
+.primary-font {
+  @apply font-[var(--primary-font)];
+}
+
+.bold {
+  @apply font-[var(--bold)];
+}
+
+.semi-bold {
+  @apply font-[var(--semi-bold)];
+}
+
+.light {
+  @apply font-[var(--light)];
+}
+/*font størrelser mobil*/
+
+.h1-sizeM {
+  @apply text-[var(--h1-sizeM)];
+}
+
+.h2-sizeM {
+  @apply text-[var(--h2-sizeM)];
+}
+
+.h3-sizeM {
+  @apply text-[var(--h3-sizeM)];
+}
+.body-sizeM {
+  @apply text-[var(--body-sizeM)];
+}
+
+/*font størrelser desktop*/
+
+.h1-sizeD {
+  @apply text-[var(--h1-sizeD)];
+}
+
+.h2-sizeD {
+  @apply text-[var(--h2-sizeD)];
+}
+
+.h3-sizeD {
+  @apply text-[var(--h3-sizeD)];
+}
+¨ .h4-sizeD {
+  @apply text-[var(--h4-sizeD)];
+}
+
+.body-bold-sizeD {
+  @apply text-[var(--body-bold-sizeD)];
+}
+
+.body-light-sizeD {
+  @apply text-[var(--body-light-sizeD)];
+}
+
+.body-mini-sizeD {
+  @apply text-[var(--body-mini-sizeD)];
+}
+
 @tailwind utilities;
 
 @layer base {
@@ -39,24 +151,25 @@ font-style: normal;
 */
 
 :root {
-  /*farver*/
+  /*farver
   --white: white;
   --black: black;
-  --black: #00000061; /* opacity 38% */
+  --black-o38: #00000061; 
 
-  --sand: #c9a788;
-  --sand-58: #c9a78894; /* opacity 58% */
+  --sand-100: #c9a788;
+  --sand-o58: #c9a78894; 
   --sand-lys: #d9b594;
 
   --grøn-100: #5e8b4b;
-  --grøn-100-o58: #5e8b4b94; /* opacity 58% */
-  --grøn-100-o33: #5e8b4b54; /* opacity 33% */
+  --grøn-100-o58: #5e8b4b94; 
+  --grøn-100-o33: #5e8b4b54; 
   --grøn-lys: #7ab861;
   --grøn-200: #65a04c;
   --grøn-300: #739466;
   --grøn-350: #6c925c;
   --grøn-500: #4d6f3d;
   --grøn-700: #445a3a;
+*/
 
   /*font-styles*/
 

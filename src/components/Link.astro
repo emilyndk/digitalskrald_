@@ -1,5 +1,20 @@
 ---
 // Henter parametrene fra Astro.props
-const { href="#", target="_self"} = Astro.props; 
+// Henter parametrene fra Astro.props, inklusive size og variant
+const { href = "#", target = "_self",  } = Astro.props;
+
+
+
+const linkStyling ="font-primary text-black hover:underline underline-offset-1 text-h3-m";
+
+
+
+
+
+
 ---
-<a href={href} class="underline" target={target}><slot /></a>
+
+
+
+<a href={href} class:list={[linkStyling]} target={target}><slot /></a>
+
