@@ -1,20 +1,21 @@
 ---
 
-const {variant="primary", state="default", size="medium", } = Astro.props;
+const {variant="primary", state="default", } = Astro.props;
 
 
 // gælder for alle //
-const buttonStyling = "";
+const buttonStyling = "rounded-full mx-1";
 
 const variantClasses ={
-"primary": "",
-"secondary": ""
+"primary": "primary-btn",
+"secondary": "",
+
 };
 
 const sizeClasses ={
-    "large":"text-4xl px-10",
-    "medium": "text-2xl px-8",
-    "small": "text-xl px-4"
+    "large":"",
+    "medium": "",
+    "small": ""
 };
 
 const stateClasses ={
@@ -23,4 +24,4 @@ const stateClasses ={
 }
 ---
 
-<button class:list={[buttonStyling, variantClasses[variant], stateClasses[state], sizeClasses[size]]}><slot /></button>
+<button class:list={[buttonStyling, variantClasses[variant], stateClasses[state]]}><slot /></button>

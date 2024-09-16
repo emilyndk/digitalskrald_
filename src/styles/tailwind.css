@@ -1,5 +1,8 @@
 @tailwind base;
 @tailwind components;
+.primary-btn {
+  @apply bg-[var(--grøn-100)];
+}
 @tailwind utilities;
 
 @layer base {
