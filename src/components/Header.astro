@@ -3,10 +3,7 @@ import Link from "../components/Link.astro";
 import "../styles/tailwind.css";
 ---
 
-<div
-  x-data="{ showmenu: false }"
-  class="p-4 fixed lg:static w-full bg-slate-200"
->
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full">
   <div id="navbar" class="flex flex-row justify-between">
     <div id="logo" class="">
       <a href="#forside"><img src="img/logo.svg" alt="" /></a>
@@ -38,13 +35,13 @@ import "../styles/tailwind.css";
         <Link href="#home">Home</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#indhold">Bogens indhold</Link>
+        <Link href="#hvordan">Hvordan bidrager jeg?</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#forfatter">Forfatteren</Link>
+        <Link href="#ressourcer">Ressourcer</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#køb">Køb nu</Link>
+        <Link href="#registering">Registrer dit bidrag</Link>
       </li>
     </ul>
   </nav>
