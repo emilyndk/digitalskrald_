@@ -16,12 +16,15 @@ export default {
         "h1-m": "28px",
         "h2-m": "22px",
         "h3-m": "16px",
-        "body-m": "14px",
+
+        "body-bold-m": "14px",
+
         // Desktop størrelser
         "h1-d": "156px",
         "h2-d": "44px",
         "h3-d": "34px",
         "h4-d": "28px",
+
         "body-bold-d": "20px",
         "body-light-d": "20px",
         "body-mini-d": "12px",
