@@ -1,26 +1,19 @@
 ---
 
-const {variant="primary", state="default", size="medium", } = Astro.props;
+const {variant="primary", } = Astro.props;
 
 
 // gælder for alle //
-const buttonStyling = "";
+const buttonStyling = "rounded-full px-4 py-2 border-2 border-black font-primary text-h3-m";
 
 const variantClasses ={
-"primary": "",
-"secondary": ""
+"primary": "bg-gron-100 hover:bg-gron-lys",
+"secondary": "bg-sand-100 hover:bg-sand-lys",
+
 };
 
-const sizeClasses ={
-    "large":"text-4xl px-10",
-    "medium": "text-2xl px-8",
-    "small": "text-xl px-4"
-};
 
-const stateClasses ={
-"default":"",
-"hover":""
-}
+
 ---
 
-<button class:list={[buttonStyling, variantClasses[variant], stateClasses[state], sizeClasses[size]]}><slot /></button>
+<button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
