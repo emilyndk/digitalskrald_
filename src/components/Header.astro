@@ -15,7 +15,7 @@ import "../styles/tailwind.css";
     <nav id="desktopmenu" class="hidden lg:block">
       <ul class="flex flex-row gap-4">
         <li class="">
-          <Link href="#">Forside</Link>
+          <Link href="/">Forside</Link>
         </li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
         <li class=""><Link href="/hvordan">Hvordan bidrager jeg?</Link></li>
         <li class=""><Link href="/ressourcer">Ressourcer</Link></li>
@@ -39,16 +39,16 @@ import "../styles/tailwind.css";
   >
     <ul>
       <li class="text-center py-2 border-y-2">
-        <Link href="#home">Home</Link>
+        <Link href="/">Home</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#hvordan">Hvordan bidrager jeg?</Link>
+        <Link href="/hvordan">Hvordan bidrager jeg?</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#ressourcer">Ressourcer</Link>
+        <Link href="/ressourcer">Ressourcer</Link>
       </li>
       <li class="text-center py-2 border-b-2">
-        <Link href="#registering">Registrer dit bidrag</Link>
+        <Link href="/registering">Registrer dit bidrag</Link>
       </li>
     </ul>
   </nav>
