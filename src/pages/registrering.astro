@@ -13,7 +13,36 @@ import Link from "../components/Link.astro";
     <div
       class="bg-gron-100-o58 rounded-2xl text-body-light-d font-light flex flex-col pl-12 pt-12 pb-12"
     >
-      <p>hej</p>
+      <form w-full max-w-lg>
+        <div class="grid grid-cols-2 pr-12">
+          <div class="pr-4">
+            <label for="quantity" class="pl-2 text-body-light-d font-light"
+              >Fornavn</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Indtast fornavn"
+              required
+              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+            />
+          </div>
+          <div class="">
+            <label for="quantity" class="pl-4 text-body-light-d font-light"
+              >Efternavn</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Indtast efternavn"
+              required
+              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+            />
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 </MainLayout>
