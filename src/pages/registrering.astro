@@ -5,152 +5,156 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Registrer dit bidrag">
-  <h1 class="text-h2-d font-bold pl-36 pt-16">Registrer dit bidrag</h1>
-  <section class="grid grid-cols-2 pt-20 pb-60 pr-36">
-    <div class="pl-36 pr-12 pt-40">
-      <img src="img/registrering.svg" alt="" />
-    </div>
-    <div
-      class="bg-gron-100-o58 rounded-2xl text-body-light-d font-light flex flex-col pl-12 pt-12 pb-12"
-    >
-      <form w-full max-w-lg>
-        <div class="grid grid-cols-2 pr-12">
-          <div class="pr-4">
-            <label for="text" class="pl-2 text-body-light-d font-light"
-              >Fornavn:</label
+  <section class="pt-20 sm:pt-0">
+    <h1 class="text-h2-m pl-12 sm:text-h2-d font-bold pl-36 pt-16">
+      Registrer dit bidrag
+    </h1>
+    <article class="sm:grid grid-cols-2 pt-20 pb-60 pr-36">
+      <div class="pt-0 pl-12 pb-12 sm:pl-36 pr-12 pt-40">
+        <img src="img/registrering.svg" alt="" />
+      </div>
+      <div
+        class="ml-12 bg-gron-100-o58 rounded-2xl text-body-light-m font-light sm:bg-gron-100-o58 rounded-2xl text-body-light-d font-light flex flex-col pl-12 pt-12 pb-12"
+      >
+        <form w-full max-w-lg>
+          <div class="pr-4 sm:grid grid-cols-2 pr-12">
+            <div class="sm:pr-4">
+              <label for="text" class="pl-2 text-body-light-d font-light"
+                >Fornavn:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Indtast fornavn"
+                required
+                class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              />
+            </div>
+            <div class="">
+              <label for="text" class="pl-4 text-body-light-d font-light"
+                >Efternavn:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Indtast efternavn"
+                required
+                class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              />
+            </div>
+          </div>
+          <div class="pt-4 pr-12">
+            <label for="email" class="pl-4 text-body-light-d font-light"
+              >Email:</label
             >
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Indtast fornavn"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Indtast E-mail@"
               required
               class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
             />
           </div>
-          <div class="">
-            <label for="text" class="pl-4 text-body-light-d font-light"
-              >Efternavn:</label
+          <div class="pr-4 sm:grid grid-cols-2 pr-12 pt-4">
+            <div class="pr-0 sm:pr-4">
+              <label for="text" class="pl-2 text-body-light-d font-light"
+                >Land:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Indtast land"
+                required
+                class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              />
+              <div></div>
+            </div>
+          </div>
+          <div class="pr-4 sm:grid grid-cols-2 pr-12 pt-4">
+            <div class="pr-0 sm:pr-4">
+              <label for="text" class="pl-2 text-body-light-d font-light"
+                >Organisation (valgfri):</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Indtast organisations"
+                required
+                class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              />
+              <div></div>
+            </div>
+          </div>
+          <div class="pr-4 sm:grid grid-cols-2 pr-12 pt-4">
+            <div class="pr-0 sm:pr-4">
+              <label for="quantity" class="pl-2 text-body-light-d font-light"
+                >Antal deltager:</label
+              >
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                placeholder="Indtast antal"
+                required
+                class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              />
+              <div></div>
+            </div>
+          </div>
+          <div class="pt-4 pr-12">
+            <label for="email" class="pl-4 text-body-light-d font-light"
+              >Mængde af datat slettet (angivet i GB):</label
             >
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Indtast efternavn"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Indtast mængde data"
               required
               class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
             />
           </div>
-        </div>
-        <div class="pt-4 pr-12">
-          <label for="email" class="pl-4 text-body-light-d font-light"
-            >Email:</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Indtast E-mail@"
-            required
-            class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
-          />
-        </div>
-        <div class="grid grid-cols-2 pr-12 pt-4">
-          <div class="pr-4">
-            <label for="text" class="pl-2 text-body-light-d font-light"
-              >Land:</label
-            >
+          <div class="pt-12">
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Indtast land"
-              required
-              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+              type="radio"
+              name="conditions"
+              id="conditions"
+              value="conditions"
+              class="mr-2 text-gron-100-o58 bg-gron-100-o58 border sborder-black"
             />
-            <div></div>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 pr-12 pt-4">
-          <div class="pr-4">
-            <label for="text" class="pl-2 text-body-light-d font-light"
-              >Organisation (valgfri):</label
+            <label
+              for="conditions"
+              class="mr-6 text-black text-body-mini-d font-light"
+              >*Jeg er enig med Let’s Do It, World Terms and Conditions.</label
             >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Indtast organisations"
-              required
-              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
-            />
-            <div></div>
           </div>
-        </div>
-        <div class="grid grid-cols-2 pr-12 pt-4">
-          <div class="pr-4">
-            <label for="quantity" class="pl-2 text-body-light-d font-light"
-              >Antal deltager:</label
+          <div>
+            <input
+              type="radio"
+              name="conditions"
+              id="conditions"
+              value="conditions"
+              class="mr-2 text-gron-100-o58 bg-gron-100-o58 border sborder-black"
+            />
+            <label
+              for="conditions"
+              class="mr-6 text-black text-body-mini-d font-light"
+              >I ønsker at tilmelde mig nyheder fra World Cleanup Day</label
             >
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              placeholder="Indtast antal"
-              required
-              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
-            />
-            <div></div>
           </div>
-        </div>
-        <div class="pt-4 pr-12">
-          <label for="email" class="pl-4 text-body-light-d font-light"
-            >Mængde af datat slettet (angivet i GB):</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Indtast mængde data"
-            required
-            class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
-          />
-        </div>
-        <div class="pt-12">
-          <input
-            type="radio"
-            name="conditions"
-            id="conditions"
-            value="conditions"
-            class="mr-2 text-gron-100-o58 bg-gron-100-o58 border sborder-black"
-          />
-          <label
-            for="conditions"
-            class="mr-6 text-black text-body-mini-d font-light"
-            >*Jeg er enig med Let’s Do It, World Terms and Conditions.</label
-          >
-        </div>
-        <div>
-          <input
-            type="radio"
-            name="conditions"
-            id="conditions"
-            value="conditions"
-            class="mr-2 text-gron-100-o58 bg-gron-100-o58 border sborder-black"
-          />
-          <label
-            for="conditions"
-            class="mr-6 text-black text-body-mini-d font-light"
-            >I ønsker at tilmelde mig nyheder fra World Cleanup Day</label
-          >
-        </div>
-        <div class="pt-6">
-          <Button variant="secondary"
-            ><a class="pl-10 pr-10 pt-4" href="/registrering">Registre</a
-            ></Button
-          >
-        </div>
-      </form>
-    </div>
+          <div class="pt-6">
+            <Button variant="secondary"
+              ><a class="pl-10 pr-10 pt-4" href="/registrering">Registre</a
+              ></Button
+            >
+          </div>
+        </form>
+      </div>
+    </article>
   </section>
 </MainLayout>
