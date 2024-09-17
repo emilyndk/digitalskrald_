@@ -1,9 +1,13 @@
 ---
 import Link from "../components/Link.astro";
+import Button from "../components/Button.astro";
 import "../styles/tailwind.css";
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full">
+<div
+  x-data="{ showmenu: false }"
+  class="p-4 fixed lg:static w-full bg-sand-o58"
+>
   <div id="navbar" class="flex flex-row justify-between">
     <div id="logo" class="">
       <a href="#forside"><img src="img/logo.svg" alt="" /></a>
@@ -15,7 +19,10 @@ import "../styles/tailwind.css";
         </li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
         <li class=""><Link href="#hvordan">Hvordan bidrager jeg?</Link></li>
         <li class=""><Link href="#ressourcer">Ressourcer</Link></li>
-        <li class=""><Link href="#registering">Registrer dit bidrag</Link></li>
+        <!-- <li class=""><Link href="#registering">Registrer dit bidrag</Link></li> -->
+        <Button variant="primary"
+          ><Link href="#registering">Registrer dit bidrag</Link></Button
+        >
       </ul>
     </nav>
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
