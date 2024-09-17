@@ -7,7 +7,7 @@ import Link from "../components/Link.astro";
 <MainLayout title="Registrer dit bidrag">
   <h1 class="text-h2-d font-bold pl-36 pt-16">Registrer dit bidrag</h1>
   <section class="grid grid-cols-2 pt-20 pb-60 pr-36">
-    <div class="pl-36 pr-12">
+    <div class="pl-36 pr-12 pt-40">
       <img src="img/registrering.svg" alt="" />
     </div>
     <div
@@ -16,8 +16,8 @@ import Link from "../components/Link.astro";
       <form w-full max-w-lg>
         <div class="grid grid-cols-2 pr-12">
           <div class="pr-4">
-            <label for="quantity" class="pl-2 text-body-light-d font-light"
-              >Fornavn</label
+            <label for="text" class="pl-2 text-body-light-d font-light"
+              >Fornavn:</label
             >
             <input
               type="text"
@@ -29,8 +29,8 @@ import Link from "../components/Link.astro";
             />
           </div>
           <div class="">
-            <label for="quantity" class="pl-4 text-body-light-d font-light"
-              >Efternavn</label
+            <label for="text" class="pl-4 text-body-light-d font-light"
+              >Efternavn:</label
             >
             <input
               type="text"
@@ -41,6 +41,80 @@ import Link from "../components/Link.astro";
               class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
             />
           </div>
+        </div>
+        <div class="pt-4 pr-12">
+          <label for="email" class="pl-4 text-body-light-d font-light"
+            >Email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Indtast E-mail@"
+            required
+            class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+          />
+        </div>
+        <div class="grid grid-cols-2 pr-12 pt-4">
+          <div class="pr-4">
+            <label for="text" class="pl-2 text-body-light-d font-light"
+              >Land:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Indtast land"
+              required
+              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+            />
+            <div></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 pr-12 pt-4">
+          <div class="pr-4">
+            <label for="text" class="pl-2 text-body-light-d font-light"
+              >Organisation (valgfri):</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Indtast organisations"
+              required
+              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+            />
+            <div></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 pr-12 pt-4">
+          <div class="pr-4">
+            <label for="quantity" class="pl-2 text-body-light-d font-light"
+              >Antal deltager:</label
+            >
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              placeholder="Indtast antal"
+              required
+              class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+            />
+            <div></div>
+          </div>
+        </div>
+        <div class="pt-4 pr-12">
+          <label for="email" class="pl-4 text-body-light-d font-light"
+            >Mængde af datat slettet (angivet i GB):</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Indtast mængde data"
+            required
+            class="w-full p-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-text-gron-100 bg-sand-100"
+          />
         </div>
       </form>
     </div>
