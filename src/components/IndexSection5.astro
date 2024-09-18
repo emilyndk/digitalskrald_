@@ -64,29 +64,33 @@ import 'animate.css';
   function createObserver(imageId, animationClass) {
     const image = document.getElementById(imageId);
 
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          // Nulstil animationen ved at fjerne og genføje animationsklassen
-          entry.target.classList.remove(animationClass);
+    // Tjek om elementet eksisterer og er et HTML-element
+    if (image instanceof HTMLElement) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            // Nulstil animationen ved at fjerne og genføje animationsklassen
+            image.classList.remove(animationClass);
 
-          // Trigger a reflow to restart the animation
-          void entry.target.offsetWidth; // Dette nulstiller animationen
+            // Trigger a reflow to restart the animation
+            void image.offsetWidth; // Dette nulstiller animationen
 
-          // Tilføj animationsklassen igen
-          entry.target.classList.add('animate__animated', animationClass, 'opacity-100');
-        } else {
-          // Fjern animationsklassen, når elementet forlader viewporten
-          entry.target.classList.remove(animationClass);
-          entry.target.classList.add('opacity-0');
-        }
-      });
-    }, { threshold: 0.1 });
+            // Tilføj animationsklassen igen
+            image.classList.add('animate__animated', animationClass, 'opacity-100');
+          } else {
+            // Fjern animationsklassen, når elementet forlader viewporten
+            image.classList.remove(animationClass);
+            image.classList.add('opacity-0');
+          }
+        });
+      }, { threshold: 0.1 });
 
-    observer.observe(image);
+      observer.observe(image);
+    }
   }
 
   // Opret observer for begge billeder
   createObserver('animateImage', 'animate__lightSpeedInLeft');
   createObserver('animateImageSpam', 'animate__lightSpeedInLeft');
 </script>
+
