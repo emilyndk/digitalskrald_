@@ -5,53 +5,68 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Hvordan bidrager jeg?">
-  <h1 class="font-primary font-bold">Hvordan bidrager jeg?</h1>
-  <h2>Følg vores guide til hvordan du udfører en digital oprydning</h2>
+  <h1 class="font-primary font-bold text-h1-m pl-10 pt-24">
+    Hvordan bidrager jeg?
+  </h1>
+  <h2 class="pl-10 text-h2-m pt-4">
+    Følg vores guide til hvordan du udfører en digital oprydning
+  </h2>
 
   <section class="md:grid grid-cols-2 grid-rows-4">
     <div class="m-6 max-w-120">
-      <container
-        class="bg-gron-100-o58 p-8 rounded-2xl place-content-center grid"
-      >
+      <div class="bg-gron-100-o58 p-8 rounded-2xl place-content-center grid">
         <h2 class="font-primary text-center">Step 1: Ryd op i din telefon</h2>
         <img class="mx-auto" src="/img/mobilKost.svg" alt="" />
         <p class="font-primary text-center">
           Fjern alle de applikationer, du ikke har brugt i et stykke tid, eller
           kun har brugt et par gange.
         </p>
-      </container>
+      </div>
     </div>
+
+    <div class="hidden md:block pl-10">
+      <img src="/img/stregHojre.svg" alt="" />
+    </div>
+
+    <div class="hidden md:block pl-20">
+      <img src="/img/stregVenstre.svg" alt="" />
+    </div>
+
     <div class="m-6 max-w-120">
-      <container class="grid bg-gron-100-o58 p-8 rounded-2xl">
+      <div class="grid bg-gron-100-o58 p-8 rounded-2xl">
         <h2 class="font-primary text-center">Step 2: Ryd op på din harddisk</h2>
         <img class="mx-auto" src="/img/USB.svg" alt="" />
         <p class="font-primary text-center">
           Sorter din personlige computer og slet filer, der er dubletter eller
           er blevet overflødige.
         </p>
-      </container>
+      </div>
     </div>
 
     <div class="m-6 max-w-120">
-      <container class="grid bg-gron-100-o58 p-8 rounded-2xl">
+      <div class="grid bg-gron-100-o58 p-8 rounded-2xl">
         <h2 class="font-primary text-center">Step 3: Ryd op i din indbakke</h2>
         <img class="mx-auto" src="/img/SkraldespandMedMail.svg" alt="" />
         <p class="font-primary text-center">
           Fjern alle de applikationer, du ikke har brugt i et stykke tid, eller
           kun har brugt et par gange.
         </p>
-      </container>
+      </div>
     </div>
 
-    <div class="m-6 max-w-120">
-      <container class="grid bg-gron-100-o58 p-8 rounded-2xl">
+    <div class="hidden md:block">
+      <img src="/img/stregHojre.svg" alt="" />
+    </div>
+
+    <div class="m-6 max-w-120 col-start-2">
+      <div class="grid bg-gron-100-o58 p-8 rounded-2xl">
         <h2 class="font-primary text-center">Step 4: Lav nye ordninger</h2>
         <img class="mx-auto" src="/img/Clipboard.svg" alt="" />
         <p class="font-primary text-center">
           I stedet for at sende e-mails, brug flere samarbejdsplatforme. Stop
           med at sende ‘ok’ og ‘tak’ e-mails!
         </p>
-      </container>
+      </div>
     </div>
   </section>
 </MainLayout>
