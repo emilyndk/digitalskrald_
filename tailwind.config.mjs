@@ -14,13 +14,15 @@ export default {
       fontSize: {
         // Mobil størrelser
         "h1-m": "28px",
+        "h1.2-m": "60px",
         "h2-m": "22px",
         "h3-m": "16px",
+        "h4-m": "12px",
 
         "body-bold-m": "14px",
 
         // Desktop størrelser
-        "h1-d": "156px",
+        "h1-d": "120px",
         "h2-d": "44px",
         "h3-d": "34px",
         "h4-d": "28px",
