@@ -1,27 +1,43 @@
 ---
-import Button from "./Button.astro"
+import Button from "./Button.astro";
 ---
+
 <style>
-.btn{
-    top: 725%;
-}
-@media (min-width: 1024px) {
-  
-  .btn{
-    right: 75%;
-    top:605%;
+  .btn {
+    top: 740%;
   }
-}
+  @media (min-width: 990px) {
+    .btn {
+      right: 75%;
+      top: 595%;
+    }
+  }
 </style>
 
 <div class="bg-sand-o58 py-14 px-10">
+  <h1
+    class="font-primary font-bold text-h2-m text-center md:text-left mb-4 md:text-h1-m"
+  >
+    Registrer dit bidrag
+  </h1>
 
-    <h1 class="font-primary font-bold text-h2-m text-center md:text-left  mb-4 md:text-h1-m">Registrer dit bidrag</h1>
-    <img src="/img/figurindexs6.svg" alt="">
+  <div class="flex flex-col gap-10 md:gap-64 md:flex-row">
+    <a href="/registrering">
+      <img
+        src="/img/figurmedknapindexs6.svg"
+        alt="Den grønne figur holde 'registrer dit bidrag'-knappen"
+      /></a
+    >
+    <img
+      src="/img/figur2indexs6.svg"
+      alt="Den grønne ven deler Digital Skraldedag med en del"
+    />
+  </div>
 
-
+  <!--
     <div class="btn absolute right-28">
         <Button variant="primary"
         ><a href="/registrering">Registrer dit bidrag</a></Button>
     </div>
+     -->
 </div>

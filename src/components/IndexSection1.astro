@@ -1,42 +1,58 @@
 ---
-import Button from "./Button.astro"
+import Button from "./Button.astro";
 ---
 
 <div class="pt-30">
+  <div class="grid grid-rows-2 mt-36 md:hidden">
+    <div class="left">
+      <h1 class="text-h1.2-m font-bold leading-none text-center">184 dage</h1>
 
-<div class="grid grid-rows-2 mt-36  md:hidden">
-
-    <div class="left"><h1 class="text-h1.2-m font-bold leading-none text-center">184 dage</h1>
-
-        <div class="ml-16"> <p class="text-h4-m md:text-body-bold-d pb-5 ">Digital skralde dag 15. marts 2025</p>
-           <Button variant="primary">Gem datoen</Button></div>
-           
-        </div>
-       
-    
-    <div class="right row-start-1 grid grid-cols-2"><img class="w-1/2 ml-10 col-start-2" src="/img/figurindexs1.svg" alt=""></div>
-
-<img class="mx-auto pt-20 animate-pulse" src="/img/pilnedindexs1.svg" alt="">
-
+      <div class="ml-16">
+        <p class="text-h4-m md:text-body-bold-d pb-5">
+          Digital skralde dag 15. marts 2025
+        </p>
+        <Button variant="primary">Gem datoen</Button>
+      </div>
     </div>
 
+    <div class="right row-start-1 grid grid-cols-2">
+      <img
+        class="w-1/2 ml-10 col-start-2"
+        src="/img/figurindexs1.svg"
+        alt="Grøn mand der byder dig velkommen"
+      />
+    </div>
 
+    <img
+      class="mx-auto pt-20 animate-bounce"
+      src="/img/pilnedindexs1.svg"
+      alt="En pil ned ad der fører til næste sektion"
+    />
+  </div>
 
+  <div class="hidden md:visible md:mx-16 md:grid grid-cols-3 gap-6 pt-40">
+    <div class="left col-span-2">
+      <h1 class="text-h1-m font-bold md:text-h1-d leading-none">184 dage</h1>
+      <p class="text-h4-m md:text-body-bold-d mb-10">
+        Digital skralde dag 15. marts 2025
+      </p>
+      <Button variant="primary">Gem datoen</Button>
+    </div>
 
+    <div class="right">
+      <img
+        class="w-1/2"
+        src="/img/figurindexs1.svg"
+        alt="Grøn mand der byder dig velkommen"
+      />
+    </div>
 
-
-<div class="hidden md:visible md:mx-16 md:grid grid-cols-3 gap-6 pt-40  ">
-
-<div class="left col-span-2"><h1 class="text-h1-m font-bold md:text-h1-d leading-none">184 dage</h1>
-    <p class="text-h4-m md:text-body-bold-d mb-10">Digital skralde dag 15. marts 2025</p>
-    <Button variant="primary">Gem datoen</Button></div>
-
-
-<div class="right"><img class="w-1/2" src="/img/figurindexs1.svg" alt=""></div>
-
-<div class="col-start-2 pt-24"><img class="mx-auto animate-pulse" src="/img/pilnedindexs1.svg" alt=""></div>
+    <div class="col-start-2 pt-24">
+      <img
+        class="mx-auto animate-bounce"
+        src="/img/pilnedindexs1.svg"
+        alt="En pil ned ad der fører til næste sektion"
+      />
+    </div>
+  </div>
 </div>
-
-
-</div>
-
