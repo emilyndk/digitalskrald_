@@ -23,11 +23,12 @@ import Button from "./Button.astro";
       />
     </div>
 
+   <a href="#target_section">
     <img
-      class="mx-auto pt-20 animate-bounce"
-      src="/img/pilnedindexs1.svg"
-      alt="En pil ned ad der fører til næste sektion"
-    />
+    class="mx-auto pt-20 animate-bounce  hover:opacity-55"
+    src="/img/pilnedindexs1.svg"
+    alt="En pil ned ad der fører til næste sektion"
+  /></a> 
   </div>
 
   <div class="hidden md:visible md:mx-16 md:grid grid-cols-3 gap-6 pt-40">
@@ -48,11 +49,19 @@ import Button from "./Button.astro";
     </div>
 
     <div class="col-start-2 pt-24">
+     <a href="#target_section"> 
       <img
-        class="mx-auto animate-bounce"
+        class="mx-auto animate-bounce hover:opacity-55"
         src="/img/pilnedindexs1.svg"
         alt="En pil ned ad der fører til næste sektion"
       />
+    </a>
     </div>
   </div>
 </div>
+
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
